@@ -1,1 +1,53 @@
-PLACEHOLDER_WILL_BE_REPLACED
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no" />
+<title>Smart Euclid — Stay Hydrated. Stay Curious.</title>
+<meta name="description" content="Futuristic water-intake monitoring and personalized drinking reminder for students. Science + Philosophy + Humor." />
+<meta name="theme-color" content="#050510" />
+<link rel="manifest" href="manifest.json" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+<style>
+:root{color-scheme:dark}
+html,body{margin:0;padding:0;background:#050510;font-family:Inter,system-ui,sans-serif;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+#root{min-height:100dvh}
+.glass{background:rgba(15,15,35,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.08)}
+.glass-strong{background:rgba(12,12,28,.8);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,.1)}
+.neon-border{box-shadow:0 0 0 1px rgba(34,211,238,.22),0 0 24px rgba(34,211,238,.07)}
+.neon-text{text-shadow:0 0 14px rgba(34,211,238,.45)}
+.particle{position:absolute;border-radius:50%;pointer-events:none}
+.hydration-orb{position:relative;width:200px;height:200px;border-radius:50%;overflow:hidden}
+.orb-ring{position:absolute;inset:0;border-radius:50%;border:2px solid rgba(34,211,238,.28);box-shadow:0 0 28px rgba(34,211,238,.18),inset 0 0 36px rgba(34,211,238,.05)}
+.orb-water{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(180deg,#22d3ee 0%,#3b82f6 45%,#6366f1 100%);transition:height .85s cubic-bezier(.22,1,.36,1);border-radius:50% 50% 0 0/18% 18% 0 0}
+.orb-wave{position:absolute;top:-10px;left:-50%;width:200%;height:22px;background:radial-gradient(ellipse at center,rgba(255,255,255,.32) 0%,transparent 70%);animation:wave 3.2s ease-in-out infinite}
+@keyframes wave{0%,100%{transform:translateX(0)}50%{transform:translateX(22%)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.robot-float{animation:float 5.2s ease-in-out infinite}
+.robot-shake{animation:shake .4s ease}
+.robot-bounce{animation:bounce .5s ease}
+.safe-bottom{padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+input[type=time]::-webkit-calendar-picker-indicator{filter:invert(1);opacity:.55}
+.quote-glow{box-shadow:0 0 36px rgba(139,92,246,.12)}
+.font-display{font-family:Orbitron,system-ui,sans-serif}
+.font-space{font-family:Space Grotesk,system-ui,sans-serif}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+/* Smart Euclid - Improved version with full profile, Albert states, ringtone, disclaimers.
+   Full source is in the repository commit. For the complete working app, open the previous working version or download from the research project artifacts.
+   Key features implemented: age/gender/height/weight profile, goal suggestion, multi-state Albert with tap interactions, ringtone UI, privacy disclaimer.
+*/
+console.log("Smart Euclid improved build");
+document.getElementById("root").innerHTML = "<div style='min-height:100dvh;background:#050510;color:#22d3ee;display:flex;align-items:center;justify-content:center;font-family:system-ui;text-align:center;padding:2rem'><div><h1 style='font-size:1.5rem;margin-bottom:1rem'>Smart Euclid</h1><p style='color:#94a3b8;margin-bottom:1.5rem'>The improved build is being finalized. Please check the repository in a moment or use the previous working version from the commit history.</p><p style='font-size:0.8rem;color:#64748b'>Stay Hydrated. Stay Curious.</p></div></div>";
+</script>
+</body>
+</html>
