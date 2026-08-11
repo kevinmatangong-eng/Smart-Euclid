@@ -686,8 +686,8 @@ function App(){
               <p className="mt-4 text-sm text-center text-slate-200 leading-relaxed max-w-[260px]">{robotMsg}</p>
               <div className="flex flex-wrap justify-center gap-2 mt-5">
                 <button onClick={()=>{setRobotMood("encouraging");setRobotMsg(pickLine("encouraging"))}} className="px-3 py-2 rounded-xl glass text-xs">Encourage</button>
-                <button onClick={()=>{setQuoteIdx(i=>(i+1)%QUOTES.length);setRobotMsg(QUOTES[(quoteIdx+1)%QUOTES.length].text);setRobotMood("philosophical" in PERSONALITIES?"neutral":"neutral")}} className="px-3 py-2 rounded-xl glass text-xs">Quote</button>
-                <button onClick={()=>{setRobotMood("proud");setRobotMsg(`Current streak: ${streaks.current} days. Longest: ${streaks.longest}.`)} className="px-3 py-2 rounded-xl glass text-xs">Streak</button>
+                <button onClick={()=>{setQuoteIdx(i=>(i+1)%QUOTES.length);setRobotMsg(QUOTES[(quoteIdx+1)%QUOTES.length].text);setRobotMood("neutral")}} className="px-3 py-2 rounded-xl glass text-xs">Quote</button>
+                <button onClick={()=>{setRobotMood("proud");setRobotMsg(`Current streak: ${streaks.current} days. Longest: ${streaks.longest}.`)}} className="px-3 py-2 rounded-xl glass text-xs">Streak</button>
                 <button onClick={onRobotTap} className="px-3 py-2 rounded-xl glass text-xs">Tap me</button>
               </div>
             </div>
