@@ -1,0 +1,24 @@
+{
+  "name": "Smart Euclid",
+  "short_name": "Smart Euclid",
+  "description": "Stay Hydrated. Stay Curious. Smart water intake monitoring and personalized drinking reminder for students.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050510",
+  "theme_color": "#050510",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "4efb85ff1a9884127406218889c5f993.jpg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
